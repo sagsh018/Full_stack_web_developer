@@ -1,0 +1,7 @@
+1) So as we have discussed in previous lecture how we recieve the web pages from the servers kept at remote locations
+    with the help of internet.
+2) now the web page/websites that we look at our computer(client) and recieved from server are usually made up of three
+    languages
+    a) HTML - Used to provide structure to your web page
+    b) CSS - Used for styling the web page and beautify internet
+    c) Javascript - Responsible for your web page actually behaves. i.e. how it actually works

@@ -1,0 +1,12 @@
+1) Firstly we need to understand internet as a mean by which two computers kept at differnet location can talk
+    to each other.
+2) Now sometimes these computer are of two types:
+    Client computer (where you sits and request for a web page)
+    Server computer (where your request reach and get serverd)
+3) Now suppose you typed in your browser the URL => www.google.com and hit enter
+    Now firslty the request will go to your ISP's and through that to the DNS server, which will resolve the URL to
+    its IP address and send it back to your computer.
+4) Then your computer(client) make a direct request to the server via ISP's again and that request reaches the server 
+    with the help of Internet backbone (big wire).
+5) the server return the requested web page to the client using the same internet backbone.
+6) Now this is a brief overview of internet.
