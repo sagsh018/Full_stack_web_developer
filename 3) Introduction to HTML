@@ -1,0 +1,66 @@
+# Intro to HTML
+===============
+1) Main purpose of all the browsers is to interpret your files such as HTML file, CSS file and javascript files into 
+    a website that should be display
+2) sample HTML file 
+    <head>
+    <title>Hello</title>  ==> This will be displayed on the browser tab
+    </head>
+
+    <body>
+    <h1>Hello world</h1>  ==> will be displayed on the web page
+    </body>
+3) HTML is the foundation for all websites 
+4) HTML ==> hyper Text Markup Language
+5) https://codepen.io/pen/ ==> site to play around with the HTML, css and Javascript code online.
+6) Use the code in this HTML file to replicate on codepen.io  ==> http://gutenberg.org/files/1661/1661-h/1661-h.htm
+7) HTML page is marked up with the help of html tags
+    <tagname> </tagname>
+8) heading tags in HTML goes from h1 to h6, as the number increase, the size decrease.
+9) sources for documentation
+    a) MDN
+    b) w3 school
+    c) devdocs.io [Best]
+10) Line break tag <br> is used to have space between two lines on the web page. and this <br> tag does not require
+    the closing tag. it can work by itslf.
+11) sample code created on codepen.io in this lecture
+    ===============================================
+    <h1>The Adventures of <br> Sherlock Holmes</h1>
+    <br>
+    <h4>by</h4>
+    <br>
+    <h2>Arthur Conan Doyle</h2>
+    =================================================
+
+
+
+# The Anatomy of an HTML tag
+============================
+
+1) <h1>Hello world</h1>
+    here <h1> : is called starting tag
+         </h1> : called closing tag
+         in the middle we have content we want to apply these tags to.
+            <h1>Heading level 1</h1>
+            <h2>Heading level 2</h2>
+            <h3>Heading level 3</h3>
+            <h4>Heading level 4</h4>
+            <h5>Heading level 5</h5>
+            <h6>Heading level 6</h6>
+2) <br> : line break tag
+            also called as self closing tags
+3) <hr> : horizontal rule 
+            another example of self closing tags, used to create the horizontal lines.
+4) <hr size="3"> : Horizontal rule alonwg with an attribute
+                    size="3" is basically an attribute to this HTML tag and hr is HTML element and these HTML
+                    attrinutes modify the HTML attributes,
+    We can have a look at the information regarding the available attributes for a perticular HTML tag at the
+    HTML documentation
+
+    NOTE :: Also if you are not sure about something on a web page, we can always right click and inspect that element
+            and it can give the information about the HTML, CSS and Javascript code used to create that document.
+    
+    <hr size="3" noshade> : this one is having two attributes.
+5) <center></center> : used to centralized the entire content in the webpage.
+
+6) Have a look at the sample html file for this lecture as sample_3-1.html
