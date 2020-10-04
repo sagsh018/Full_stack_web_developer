@@ -1,0 +1,147 @@
+<!--
+    1) Here we will try to build our own personal website with the help of only HTML
+    2) we can see the old designs of the websites at :: web.archive.org
+
+-->
+<!DOCTYPE html>
+<!-- This line is used to indicate the HTML version for this Doc, in our case is is HTML5-->
+<html>
+<!-- This is going to tell browser everything between these html tags is a html code-->
+
+<head>
+    <!-- head containes information about the webpage -->
+    <meta charset="utf-8">
+    <!-- This meta tag gives the extra metadata to the browser, and when this files opens up, it tells the browser
+        that all the data inside this file is encoded with the utf-8 encoding system. this is a universally used encoding system and almost s
+        similar to unicode encoding system
+        So basically every unicode characters can be presented with the help of utf-8 encoding. check out the website 
+        https://unicode-table.com/en/blocks/
+        
+        Notice that we could also include other meta attributes. see below -->
+    <meta name="description" content="Sagar's personal website">
+    <!-- This metadata is used by search engins to search you , these all can be viewed in view source option of a web page right click-->
+    <meta name="keywords" content="HTML, XML, Javascript, CSS">
+    <meta name="author" content="Sagar Sharma">
+
+    <title>Sagar's personal website</title>
+    <!-- title contains the title of our web page -->
+</head>
+
+<body>
+    <img src="https://scontent.fdel33-1.fna.fbcdn.net/v/t1.0-1/p160x160/52961230_2102800463100481_5485985113277726720_n.jpg?_nc_cat=108&_nc_sid=dbb9e7&_nc_ohc=ygF_cRrvATEAX96AAMM&_nc_ht=scontent.fdel33-1.fna&tp=6&oh=2117b57cff61ef1ea864aba0c4f95293&oe=5F9FBA69"
+        alt="FB profile image">
+    <!-- Note the alt attribute in above image tag, which is used as the alternative text which will will be displayed in case the image is
+        not available at the mentioned URL-->
+    <h1>Sagar Sharma</h1>
+    <p><em>Founder & Devops Developer at <strong><a href="meraki.html">MERAKI</a></strong></em></p>
+    <!-- paraghrap tag, this adds one line break by default. now here in this paragraph tag there are two ways to convert the test to italics
+        1) <em></em> : this is emphasis on the text inside these tags and conver them into italics
+        2) <i></i> : to just add the style and does not emphasis.
+        So better practice is to use <em> tag
+    
+        The similar kind of pair is 
+        1) <b></b> : This again just style the text and convert it into bold
+        2) <strong></strong> : This tag convert text into bold but also gives meaning and thats why conver it into bold.
+        So again better to use this one.
+    -->
+    <p>I am a Devops Developer at Meraki. I love to code, and play cricket</p>
+    <hr size="3" noshade>
+
+    <!-- Adding the subheading with the help level 3 heading-->
+    <h3>Skills and Interest</h3>
+
+    <!-- Now we will see how to add html lists. we want here bullet list or unordered list and it is there in html as "ul"
+            Also notice that ordered list is represented as "ol"
+    -->
+    <ul>
+        <li><a href="https://github.com/sagsh018/java-repo/tree/master/Java_full_stack">Full stack Java Development</a></li>
+        <li><a href="https://github.com/sagsh018/Full_stack_web_developer">Full stack web Development</a></li>
+        <li><a href="https://github.com/sagsh018/chef-project">Chef</a></li>
+        <li><a href="https://github.com/sagsh018/jenkins-resources">Jenkins</a></li>
+        <li><a href="https://github.com/sagsh018/Gitlab-repo">git</a></li>
+        <li><a href="https://github.com/sagsh018/Docker_kube_project">docker</a></li>
+        <li><a href="https://github.com/sagsh018/Ansible_projects">Ansible</a></li>
+        <li><a href="https://github.com/sagsh018/Docker_kube_project">kubernetes</a></li>
+        <li><a href="https://github.com/sagsh018/AWS_Training">AWS</a></li>
+        <li><a href="https://github.com/sagsh018/Terraform_Project">Terraform</a></li>
+        <li><a href="https://github.com/sagsh018/Python_project">python</a></li>
+        <li><a href="https://github.com/sagsh018/Ruby_projects">ruby</a></li>
+        <li><a href="https://github.com/sagsh018/bash_repo">shell scripting</a></li>
+        <li><a href="https://github.com/sagsh018/tomcat_project">tomcat server</a></li>
+        <li><a href="https://github.com/sagsh018/Nginx_web_server">nginx</a></li>
+        <li><a href="https://github.com/sagsh018/Groovy_project">groovy</a></li>
+        <li><a href="https://github.com/sagsh018/Nexus">nexus</a></li>
+        <li><a href="https://github.com/sagsh018/Oracle_DB">Database</a></li>
+    </ul>
+    <!-- Ordered list-->
+    <h3>Hobbies</h3>
+    <ol>
+        <li>Playing cricket</li>
+        <li>watching TV</li>
+    </ol>
+
+    <!-- Now we will add the images to our HTML page 
+        Notes:
+            a) image tag <img> is a self closing tag
+            b) along with the image tag we have to provide the source of the image. and this image could be a image URL or the local image on 
+                the local system
+            c) for Online image URL => https://scontent.fdel33-1.fna.fbcdn.net/v/t1.0-1/p160x160/52961230_2102800463100481_5485985113277726720_n.jpg?_nc_cat=108&_nc_sid=dbb9e7&_nc_ohc=ygF_cRrvATEAX96AAMM&_nc_ht=scontent.fdel33-1.fna&tp=6&oh=2117b57cff61ef1ea864aba0c4f95293&oe=5F9FBA69
+            d) Notice that we will be including the img tag at the top of our web page that is just above the level-1 heading 
+            e) Now the second method to include the image is to have it in the local system and add that path to the image tag for src 
+                attribute. This image we will add at the bottom of the page. see below
+                note that we can keep the local image only in under the root of our web project folder where our .html 
+                file exist.
+            -->
+    <!--<img src="images/profile.jpg" alt="Local profile picture">-->
+
+
+    <!-- Next we will proceed with the HTML links and anchor tags. Anchor tag is basically used to add the hyper link
+        to our document. and this is a portion which explains HTML's, HT(Hyper Text) part.
+        syntax <a href="URL">URL name to be displayed on page</a>
+        
+        We willl be implementing this anchor tag at many places in this website page. Look at the code for anchor
+        tag and try to understand its usage
+    -->
+
+    <!--
+        To create our own different html page and adding th link to that page in thim main file of our
+        So for this we will create another file called as meraki.html at the same level as that of other html file
+        from where we are going to call this html page.
+
+        look at the meraki.html page to have better insite of that page. So here in this web page we have added the 
+        link to meraki.html for the intro paragraph have description about me.
+        secondly we are going to create another link with the name service provided, and that will also lead to the 
+        same page. see below
+    -->
+    <h3><a href="4.2_meraki.html">Services</a></h3>
+    <!--
+        Suppose we want to create another page for contact details so that anyone can contact me from the main page
+        file created => contact_details.html. see below the call to my contact details page
+    -->
+    <h3><a href="4.1_contact_details.html">Contact Us</a></h3>
+</body>
+
+</html>
+
+<!--
+    Notice that in the above code we have writtin first the basic code and we can also get it as a template(also called boiler
+    plate) with the help of !+tab. Note that we are getting it with the help of shortcut from emmet. To see all the
+    shortcuts go to below ling
+    https://docs.emmet.io/cheat-sheet/
+
+    basic template for html5 or boiler plate
+    =========================================
+    <!DOCTYPE html>          
+    <html>
+
+    <head>
+        <meta charset=" utf-8 ">
+        <title></title>
+    </head>
+    
+    <body>
+    
+    </body>
+    
+    </html>
+-->
