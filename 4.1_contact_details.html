@@ -13,6 +13,62 @@
     <p>Number : <em>9716782476</em></p>
     <p>Address : <em>Flat 278, Pocket GH-3, Sainath Appartment, Rohini, Delhi 110042</em></p>
     <p>Email : <em>ss0315345@gmail.com</em></p>
+    <hr size="3" noshade>
+
+    <h3>Enter your information we will contact you back soon</h3>
+    <!-- FORM -->
+    <form action="mailto:s_agarsharma@hotmail.com" method="post" enctype="text/plain">
+        <!-- action here is a URL that processes the form submission, this value can be overridden by formaction attribute on the
+                            <button>, <input type="submit"> or <input type="image">
+                and here we are mentioning in the action a mailto: action which will open up the mailing app on the local systema 
+                and load that email with the sending email we will mention in the mailto: attribute and also the mail body in that app
+                will contain we will mention in the input tags for text, email. and when we will click on submit button this action will
+                take place.
+                        -->
+        <label>Enter Name : </label>
+        <input type="text" name="Your Name :">
+        <!-- Notice that input is a self closing tag and helping us here for making the place holder for entering the text-->
+        <br>
+        <label>Enter email : </label>
+        <input type="email" name="Your Email :"><br>
+        <label>Enter your message here</label><br>
+        <textarea name="Your Message :" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit"> <br><br>
+        <!-- input tag here is helping us to create the submit button-->
+
+
+
+
+        <hr size="4" noshade>
+        <!-- other attributes for input tag -->
+        <!-- file attribute : Helps user to upload the file through the form-->
+
+        <h3>FOR PRACTICE</h3>
+        <label><h3>Kindly upload the file below if required</h3></label>
+        <input type="file">
+        <br><br>
+        <label>Choose color</label>
+        <input type="color">
+        <!-- used for color picker for the site-->
+
+        <br>
+        <label>Do you wish to register your name ?</label>
+        <input type="checkbox">
+
+        <!--date picker : Helps in picking up the date-->
+        <label><h3>Enter Date</h3></label>
+        <input type="date">
+
+        <!-- radio button : provide radio button to select -->
+        <br>
+        <h3>choose the correct option</h3>
+        <label>Home</label><input type="radio">
+        <label>Office</label><input type="radio">
+        <br><br>
+        <!-- range: Gives user the facility to select the perticular range of anything-->
+        <label><h3>Select the range of your budget</h3></label>
+        <input type="range">
+    </form>
 </body>
 
 </html>
