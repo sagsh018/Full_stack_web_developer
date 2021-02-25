@@ -1,0 +1,138 @@
+<!--Here we will copy our personal site code from previous lecture without the notes mentioned in it and here we will
+    apply CSS to modify it and level up and make it look even more beautiful
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sagar's personal website">
+    <meta name="keywords" content="HTML, XML, Javascript, CSS">
+    <meta name="author" content="Sagar Sharma">
+    <title>Sagar's personal website</title>
+    <style>
+        body {
+            background-color: #add8e6;
+        }
+    </style>
+</head>
+<!--
+    1) We will firstly try to change the background color of our html personal site and for that we will add style attribute in the body tag.
+    see the opening body tag. This is called as inline CSS and for nice colors we can take the hex codes from the below mentioned site
+    colorhunt.co
+    2) Also the site to be used to know the colors and there Hex codes is below
+    https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+    
+    3) Now after that inline CSS, we will look at the way of applying the CSS code, across the entire web page, so that we won't have to write
+        CSS code, inline of tags every time we want to apply the style to the web page.
+        for this to happen we will have to use the special element called as style element/tag under the head section of the HTML file
+        and under this style tag, we will mention the portion of the page we want to affect and inside the curly braces we will mention we affect
+        we want to put. 
+        Notice the style tag in the head section right below titile element
+        So after having the style tag in the head itself, we can remove the inline style attribute from the body tag which was
+        style="background-color: aliceblue;"
+-->
+
+<body>
+    <table cellspacing="20 ">
+        <tr>
+            <td><img src="https://scontent.fdel33-1.fna.fbcdn.net/v/t1.0-1/p160x160/52961230_2102800463100481_5485985113277726720_n.jpg?_nc_cat=108&_nc_sid=dbb9e7&_nc_ohc=ygF_cRrvATEAX96AAMM&_nc_ht=scontent.fdel33-1.fna&tp=6&oh=2117b57cff61ef1ea864aba0c4f95293&oe=5F9FBA69 "
+                    alt="FB profile image ">
+            </td>
+            <td>
+                <h1>Sagar Sharma</h1>
+                <p><em>Founder & Devops Developer at <strong><a href="meraki.html ">MERAKI</a></strong></em></p>
+                <p>I am a Devops Developer at Meraki. I love to code, and play cricket</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr size="3" noshade>
+
+    <h3>Education</h3>
+    <ul>
+        <li><a href="https://github.com/sagsh018/java-repo/tree/master/Java_full_stack ">Full stack Java Development</a></li>
+        <li><a href="https://github.com/sagsh018/Full_stack_web_developer ">Full stack web Development</a></li>
+        <li><a href="https://github.com/sagsh018/chef-project ">Chef</a></li>
+        <li><a href="https://github.com/sagsh018/jenkins-resources ">Jenkins</a></li>
+        <li><a href="https://github.com/sagsh018/Gitlab-repo ">git</a></li>
+        <li><a href="https://github.com/sagsh018/Docker_kube_project ">docker</a></li>
+        <li><a href="https://github.com/sagsh018/Ansible_projects ">Ansible</a></li>
+        <li><a href="https://github.com/sagsh018/Docker_kube_project ">kubernetes</a></li>
+        <li><a href="https://github.com/sagsh018/AWS_Training ">AWS</a></li>
+        <li><a href="https://github.com/sagsh018/Terraform_Project ">Terraform</a></li>
+        <li><a href="https://github.com/sagsh018/Python_project ">python</a></li>
+        <li><a href="https://github.com/sagsh018/Ruby_projects ">ruby</a></li>
+        <li><a href="https://github.com/sagsh018/bash_repo ">shell scripting</a></li>
+        <li><a href="https://github.com/sagsh018/tomcat_project ">tomcat server</a></li>
+        <li><a href="https://github.com/sagsh018/Nginx_web_server ">nginx</a></li>
+        <li><a href="https://github.com/sagsh018/Groovy_project ">groovy</a></li>
+        <li><a href="https://github.com/sagsh018/Nexus ">nexus</a></li>
+        <li><a href="https://github.com/sagsh018/Oracle_DB ">Database</a></li>
+    </ul>
+
+    <h3>Hobbies</h3>
+    <ol>
+        <li>Playing cricket</li>
+        <li>watching TV</li>
+    </ol>
+
+    <h3>Work Experience</h3>
+    <table border="1 ">
+        <thead>
+            <tr>
+                <th>Time span</th>
+                <th>Work experience</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2016-2018</td>
+                <td>Linux System Administrator</td>
+            </tr>
+            <tr>
+                <td>2018-2020</td>
+                <td>Devops Developer</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <h3>SKILLS</h3>
+    <table cellspacing="20 ">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>Linux System Administration</td>
+                        <td>🌠🌠🌠🌠🌠</td>
+                    </tr>
+                    <tr>
+                        <td>Web development</td>
+                        <td>🌠🌠🌠🌠</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Automating Infrastructure using CI/CD pipeline</td>
+                        <td>🌠🌠🌠🌠🌠</td>
+                    </tr>
+                    <tr>
+                        <td>Java development</td>
+                        <td>🌠🌠🌠🌠</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <hr size="3 " noshade>
+    <h3><a href="4.2_meraki.html ">Services</a></h3>
+    <h3><a href="4.1_contact_details.html ">Contact Us</a></h3>
+</body>
+
+</html>
