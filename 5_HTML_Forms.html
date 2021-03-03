@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML FORMS</title>
+</head>
+
+<body>
+    <h1>This is a web page containing HTML Forms</h1>
+    <h2>Form with different input types</h2>
+    <hr>
+    <center>
+        <form action="/tacos">
+            <div>
+                <label for="username">Enter User Name : </label>
+                <input type="text" placeholder="Username" id="username" name="username">
+            </div>
+            <div>
+                <label for="password">Enter password : </label>
+                <input type="password" placeholder="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="color">Pick a Color</label>
+                <input type="color" id="color" name="Color">
+            </div>
+            <div>
+                <label for="num">Enter Number</label>
+                <input type="number" id="num" name="number" min="1" max="100" value="25" step="2">
+            </div>
+            <div>
+                <label>
+                    <!-- Here we are using nested way to assign a label to input element -->
+                    Pick a Date
+                    <input type="date" name="date">
+                </label>
+            </div>
+            <div>
+                <!-- The below button is having default type of submit inside form. So no need to mention
+                    the type -->
+                <button>SUBMIT BUTTON FROM BUTTON TAG</button>
+            </div>
+            <div>
+                <!-- Below button type is just button, it will not behave in a defult way inside form
+                    and will not submit and will not redirect on the page as specified by action attribute
+                    of from element -->
+                <button type="button">JUST BUTTON</button>
+            </div>
+            <div>
+                <!-- Below is another way of creating button with submit functionality. but note that with
+                    input element submit functionality is not default as button element -->
+                <input type="submit" value="SUBMIT BUTTON FROM INPUT TAG">
+            </div>
+        </form>
+        <hr>
+        <h2>Currently outside of all forms</h2>
+        <div>
+            <!-- This is outside form button and hence does not have its default functionality as 
+                submit -->
+            <button>OUTSIDE FORM</button>
+        </div>
+        <hr>
+        <h2>Form for google search</h2>
+        <form action="https://www.google.com/search">
+            <div>
+                <input type="text" placeholder="Search here" name="q">
+            </div>
+            <div>
+                <button>SEARCH GOOGLE</button>
+            </div>
+        </form>
+        <hr>
+        <h2>Form for youtube search</h2>
+        <form action="https://www.youtube.com/results">
+            <div>
+                <input type="text" placeholder="Search here" name="search_query">
+                <button>SEARCH YOUTUBE</button>
+            </div>
+        </form>
+        <hr>
+        <h2>Form containing checkbox</h2>
+        <form action="/image">
+            <label for="Agree">I Agree</label>
+            <input type="checkbox" id="Agree" name="agreement">
+            <br>
+            <br>
+            <div>
+                <button>submit</button>
+            </div>
+        </form>
+        <hr>
+        <h2>Form containing radiobutton</h2>
+        <form action="/image">
+            <h3>Select the size below</h3>
+            <div>
+                <label for="small">SMALL</label>
+                <input type="radio" id="small" name="size" value="small">
+            </div>
+            <div>
+                <label for="large">LARGE</label>
+                <input type="radio" id="large" name="size" value="large" checked>
+            </div>
+            <div>
+                <label for="extra_large">XL</label>
+                <input type="radio" id="extra_large" name="size" value="extra_large">
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+        <hr>
+        <h2>Form containing Drop Down box</h2>
+        <form action="/image">
+            <div>
+                <label for="color">Select color from drop down below</label>
+                <select name="color" id="color">
+                    <option value="">---Select Color---</option>
+                    <option value="red" selected>RED</option>
+                    <option value="green">GREEN</option>
+                    <option value="blue">BLUE</option>
+                </select>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+        <hr>
+        <form action="/image">
+            <div>
+                <label for="CGPA">Enter CGPA on 10 point scale</label>
+                <input type="range" id="CGPA" name="CGPA" min="1" max="10" step="1" value="7">
+            </div>
+            <div>
+                <button>SUBMIT</button>
+            </div>
+        </form>
+        <hr>
+        <form action="/image">
+            <div>
+                <label for="comments">Enter Extra comments in below box</label>
+                <br>
+                <textarea name="comments" id="comments" cols="40" rows="10" placeholder="Enter Text"></textarea>
+            </div>
+        </form>
+        <hr>
+        <h2>Form contains built in validators</h2>
+        <form action="/image">
+            <div>
+                <label for="username">Enter Username</label>
+                <input type="text" placeholder="Enter User Name" name="username" id="username" required>
+            </div>
+            <div>
+                <label for="first">Enter First name</label>
+                <input type="text" placeholder="firstname" name="first" id="first" required minlength="5" maxlength="12">
+            </div>
+            <div>
+                <input type="email" required>
+            </div>
+            <div>
+                <input type="url" required>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>

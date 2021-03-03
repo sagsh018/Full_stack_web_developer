@@ -1,0 +1,22 @@
+h2 {
+    /* Here we are mentioning color in rgb format */
+    color: rgb(197, 13, 50);
+    background-color: yellowgreen;
+}
+
+button {
+    /* This is another way of writing the color code in hexadecimal format */
+    color: #8a2be2;
+    background-color: greenyellow;
+}
+
+p {
+    color: blue;
+    /* note: background property is more powerful than background-color. */
+    background: orange;
+}
+
+body {
+    /* if in hexa decimal color code, if the same letter or number is repeating we can write them once */
+    background-color: #000;
+}
