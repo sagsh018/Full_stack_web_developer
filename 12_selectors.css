@@ -1,0 +1,211 @@
+/* Universal Selector */
+
+* {
+    background-color: #b7e4c7;
+}
+
+
+/* Element selectors */
+
+button {
+    font-size: large;
+    font-family: cursive;
+}
+
+
+/* giving multiple emements to selectors */
+
+h1,
+h2 {
+    color: #03506f;
+    font-family: monospace;
+}
+
+
+/* using id as a selector */
+
+#login {
+    background-color: #cae4db;
+    font-size: 20px;
+    color: #00303f;
+}
+
+#signup {
+    background-color: #111d5e;
+    color: #d3e0ea;
+}
+
+
+/* class selectors */
+
+
+/* different from id, in a way that id has to be unique and can be used only with one element */
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 15px;
+}
+
+
+/* Descendent selectors */
+
+
+/* So inside .post class, inside span all ancher tags are provided this color */
+
+.post span a {
+    color: #03506f;
+    text-decoration: none;
+}
+
+footer a {
+    color: purple;
+}
+
+
+/* Adjuscent and direct selector */
+
+
+/* Adjuscent */
+
+h2+button {
+    background-color: magenta
+}
+
+
+/* input+button {
+    font-size: 50px;
+} */
+
+
+/* Direct descendent */
+
+footer>a {
+    color: #6e0d25;
+}
+
+
+/* Attribute selectors */
+
+input[type="password"] {
+    color: #d81159
+}
+
+
+/* below is an example of wherever there is a word google in the URL */
+
+a[href*="google"] {
+    color: magenta;
+}
+
+
+/* Example where it should end with .org */
+
+a[href$=".org"] {
+    color: #6e0d25
+}
+
+
+/* We could also do something as below  */
+
+
+/* 
+section[class="post"] {
+    background-color: red;
+} */
+
+
+/* Instead of above we could just simply write .post{} */
+
+
+/* Another way */
+
+
+/* section.post {
+    background-color: #b7e4c7;
+} */
+
+
+/* Pseudo classes */
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:hover {
+    background-color: #111d5e;
+}
+
+.post button:active {
+    background-color: blueviolet;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px orange;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #d8e46b;
+}
+
+
+/* pseudo elements */
+
+h2::first-letter {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+p::first-line {
+    background-color: yellowgreen;
+}
+
+p::selection {
+    background-color: red;
+}
+
+
+/* below ode matters */
+
+h3 {
+    color: #780116;
+}
+
+h3 {
+    color: #ea7317
+}
+
+
+/* Specificity */
+
+button {
+    /* no use of this */
+    background-color: #273e47
+}
+
+
+/* 
+So because below three peice of code i am not ableto change the background color of all buttons to 273e47
+because below once are more specific in terms of ID, class and so on
+
+ORDER
+=====
+important > Inline style >ID selectors>CLASS, Attributes & Pseudo-class selectors>ELEMENT & pseudo-element selectors
+
+https://specificity.keegan.st/
+
+#login {
+    background-color: #cae4db;
+    font-size: 20px;
+    color: #00303f;
+}
+
+#signup {
+    background-color: #111d5e;
+    color: #d3e0ea;
+}
+
+h2+button {
+    background-color: magenta
+}
+*/

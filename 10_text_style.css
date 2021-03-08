@@ -1,0 +1,66 @@
+.example0 {
+    text-align: left;
+    /* So we can use text decorator to underline, put color to line, overline, pattern of line and width of line */
+    text-decoration: underline #45da67 dotted 10px;
+}
+
+a {
+    /* here we are using text-decorator to remove all the decoration inside this ancher tag. */
+    text-decoration: none;
+}
+
+.example1 {
+    text-align: center;
+    font-weight: normal;
+    text-decoration: overline double red;
+}
+
+.example2 {
+    text-align: right;
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+.example3 {
+    width: 50%;
+    text-align: right;
+    /* So we are providing the font names and if the font names are not available on any OS
+        or browser, then it will fall back to next font Helvetica and if this does not exist
+        then fall back to font-family - sans-serif */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.example4 {
+    text-align: justify;
+    line-height: 2;
+    /* below we have mentioned entire font family */
+    font-family: fantasy;
+}
+
+.example5 {
+    /* start is similar to left */
+    text-align: start;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.example6 {
+    text-align: end;
+}
+
+.example5 {
+    font-weight: bold;
+}
+
+
+/* 
+Below are the text properties we have discussed
+text-align
+text-decoration 
+font-weight
+width
+line-height
+letter-spacing
+font-size
+font-family
+*/
