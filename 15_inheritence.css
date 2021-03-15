@@ -1,0 +1,32 @@
+/* Using below all part of body including all tags and elements will inherit color mentioned below */
+
+body {
+    background-color: #d8e2dc;
+    color: #025955;
+}
+
+
+/* below code will setup color of text inside section, mayit be any tag. So now tags and elemets will inherit color 
+    property from section as it is closer than body */
+
+section {
+    color: #9d4edd;
+}
+
+
+/* Here the elements inside the form will inherit the css styles from form element as it is closest */
+
+form {
+    color: #ff6d00;
+}
+
+
+/* Some of the elements are such as they  don't inherit the properties by default, we have to explicitly mention it */
+
+
+/* So below code will inherit the color property from "form" element */
+
+input,
+button {
+    color: inherit
+}

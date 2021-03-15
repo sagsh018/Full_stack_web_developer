@@ -1,0 +1,50 @@
+.first {
+    background-color: palegoldenrod;
+    border: 1px black solid;
+    display: inline
+}
+
+.second {
+    background-color: rgb(226, 43, 156);
+    border: 1px black solid;
+    display: block
+}
+
+.three {
+    background-color: aqua;
+    border: 1px black solid;
+    /* Note that for inline element the height and weight will not work */
+    height: 50px;
+    width: 50px;
+    /* Note that for inline elements, padding will work but it will not push any text and make specially a space for the
+        element */
+    padding: 20px;
+    /* Margin is only working horizontaly on a line where we have our span */
+    margin: 200px
+}
+
+.four {
+    /* Since h1 elements are block elements, all below settings be applied on them */
+    background-color: darkgreen;
+    border: 2px black solid;
+    height: 10px;
+    width: 200px;
+    padding: 30px;
+    margin: 100px;
+}
+
+div {
+    /* So here we are able to display block elements "div" inline using display property
+        as inline-block
+        So with the help of display property, inline elements started resonding to all the box model elements */
+    height: 200px;
+    width: 200px;
+    background-color: darkorchid;
+    border: 2px black solid;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    color: blanchedalmond;
+    margin: 10px
+}

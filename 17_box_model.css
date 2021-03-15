@@ -1,0 +1,73 @@
+body {
+    background-color: teal;
+    /* We have default margin to body of our page which we can remove using 0
+        margin: 0; */
+}
+
+#first {
+    width: 250px;
+    height: 250px;
+    background-color: darkgoldenrod;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /*
+        by default it is content-box
+     box-sizing: content-box; */
+    box-sizing: border-box;
+    border-radius: 8%;
+    /* below padding is applied by giving only one value for all 4 sides */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#second {
+    width: 250px;
+    height: 250px;
+    background-color: coral;
+    border-width: 3px;
+    border-color: black;
+    border-style: dashed;
+    box-sizing: border-box;
+    border-left-width: 8px;
+    border-radius: 6%;
+    /* giving padding as vertical and horizontal */
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+#third {
+    width: 250px;
+    height: 250px;
+    background-color: steelblue;
+    /* Here we are going to set all three properties of border using single line */
+    border: 9px solid black;
+    box-sizing: border-box;
+    border-left-style: dotted;
+    border-radius: 20px;
+    /* giving padding individually in one line */
+    padding: 20px 10px 20px 10px;
+}
+
+h1 {
+    /* So instead of entire h1 block only the defined width will have color blue */
+    font-size: 30px;
+    width: 150px;
+    background-color: blue;
+    border-width: 2px;
+    border-color: black;
+    border-style: groove;
+    border-radius: 50%;
+    text-align: center;
+    /* Below we are setting padding individually on all the 4 sides */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+span {
+    /* created space between hello and smile */
+    margin-left: 20px;
+}
