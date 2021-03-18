@@ -1,0 +1,50 @@
+.circle {
+    background-color: tomato;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    transition: all 3s 1s;
+}
+
+.circle:hover {
+    background-color: magenta;
+    border-radius: 50%;
+}
+
+section div {
+    width: 100px;
+    height: 100px;
+    background-color: seagreen;
+    border: 1px solid black;
+    margin: 20px 0;
+    transition: margin-left 3s 1s;
+}
+
+section:hover div {
+    margin-left: 500px;
+}
+
+.ease:hover {
+    transition-timing-function: ease;
+}
+
+.easein {
+    transition-timing-function: ease-in;
+}
+
+.easeout {
+    transition-timing-function: ease-out;
+}
+
+.easeinout {
+    transition-timing-function: ease-in-out;
+}
+
+.linear {
+    transition-timing-function: linear;
+}
+
+.cb {
+    transition-timing-function: cubic-bezier(1, 0, 1, 1);
+}

@@ -1,0 +1,114 @@
+section {
+    background-color: darkgrey;
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.one {
+    background-color: steelblue;
+    /* notice here we are not using px to define width and height of div. we are making use of % 
+        and this .one class element is having percentage with respect to its parent element which 
+        section in this case.*/
+    width: 35%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 20%;
+    margin: 5%;
+    display: inline-block;
+}
+
+.two {
+    background-color: teal;
+    width: 35%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 20%;
+    margin: 5%;
+    display: inline-block;
+}
+
+h1 {
+    border: 1px solid black;
+    font-size: 40px;
+    /* The line height below is giving percentage with respect of the height of the font give above
+        as 40px. */
+    line-height: 200%;
+}
+
+
+/* Lets consider example of ems */
+
+
+/* So here if we notice size of h2, h3 and p are reletative to article size.
+    1 em = same as size of parent
+    2 em = 2 times the size of parent
+    1.5 em = 1.5 times the size of parent
+ */
+
+#ems {
+    font-size: 15px;
+}
+
+#ems h2 {
+    font-size: 2em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 1em;
+}
+
+
+/* Below we will conside another example of using em with properties like, padding, margin etc */
+
+#ems button {
+    /* notice below fint-size property is in relation with the parent size of article */
+    font-size: 2em;
+    background-color: steelblue;
+    /* All properties below are in relation with the font size of the element itself
+        like padding, border-radius margin */
+    padding: 0 1em;
+    border-radius: 1.5em;
+    margin: 1em;
+}
+
+#ems ul {
+    /* since there are nested ul elements and all will become the double the size of there parent element
+        So thisis one of the disadvantage of using ems
+        Thats the reason we will go for rems, where all element are relative to root elements only. */
+    font-size: 2em;
+}
+
+
+/* So in case of rems all the elements having size units as rem, will depend on this html size. */
+
+html {
+    font-size: 10px;
+}
+
+#rems h2 {
+    font-size: 2rem;
+}
+
+#rems h3 {
+    font-size: 3rem;
+}
+
+#rems p {
+    font-size: 2rem;
+}
+
+#rems ul {
+    /* So in this case size of nested elements will also depend on the root of elements and this will not create the 
+        impact as that of em
+        note here root is html element */
+    font-size: 3rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}
