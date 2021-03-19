@@ -1,0 +1,29 @@
+.first {
+    width: 60%;
+    height: 500px;
+    background-image: url("https://images.unsplash.com/photo-1542300058-849d3b08aa0f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.second {
+    width: 60%;
+    height: 500px;
+    /* make sure that in below background line backgrount size should come immediately after the position separated
+        by a / */
+    background: no-repeat center/cover url("https://images.unsplash.com/photo-1543310465-f4d3ca5a2a25?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=751&q=80");
+    margin: 0 auto;
+}
+
+.third {
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    /* below we are setting two different background, like one is the image and other is the background color blue */
+    background: no-repeat center/50% url("https://images.unsplash.com/photo-1538941214074-9b578e573632?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1504&q=80"), blue
+}
