@@ -1,0 +1,2228 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container1 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    /* Below is another property that decide on whether it will be on a row or column or reverse */
+    /* flex-direction: row is default value */
+    /* main axis is left to right */
+    flex-direction: row;
+}
+
+#container1 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container2 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    /* main axis is from right to left */
+    flex-direction: row-reverse;
+}
+
+#container2 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container3 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    /* notice that below we are mentioning the flex direction as column and since the sum of size of each div is more 
+        than the height of our section, then also all div fized into the section and do not overflow
+        thats what flexbox does. */
+    /* main axis is from top to bottom */
+    flex-direction: column;
+}
+
+#container3 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container4 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    /* main axis is from bottom to top */
+    flex-direction: column-reverse;
+}
+
+#container4 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container5 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    /* notice below mentioned property justify content will not create any difference as our main axis is from left to
+        right and also the content is justified on the left hand side. */
+    justify-content: flex-start;
+}
+
+#container5 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container6 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    /* notice that since our main axis is from left to right and we are justifying the content from end the colors will
+        start from right hand side. */
+    justify-content: flex-end;
+}
+
+#container6 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container7 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+#container7 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container8 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+#container8 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container9 {
+    background-color: #284b63;
+    width: 90%;
+    height: 1200px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#container9 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container10 {
+    background-color: #284b63;
+    width: 90%;
+    height: 1200px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#container10 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container11 {
+    background-color: #284b63;
+    width: 90%;
+    height: 1200px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+#container11 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container12 {
+    background-color: #284b63;
+    width: 90%;
+    height: 1200px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+#container12 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container13 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#container13 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container14 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+#container14 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container15 {
+    background-color: #284b63;
+    width: 90%;
+    height: 1200px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container15 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container16 {
+    background-color: #284b63;
+    width: 90%;
+    height: 1200px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+#container16 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container17 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#container17 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container18 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#container18 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container19 {
+    background-color: #284b63;
+    width: 90%;
+    height: 1200px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#container19 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container20 {
+    background-color: #284b63;
+    width: 90%;
+    height: 1200px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+#container20 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container21 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#container21 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container22 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+#container22 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container23 {
+    background-color: #284b63;
+    width: 90%;
+    height: 1200px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#container23 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container24 {
+    background-color: #284b63;
+    width: 90%;
+    height: 1200px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+#container24 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container25 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    /* So below shows that space will be evenly divided between and around all the divs
+        This couls also be used along with all the other flex-directions */
+    justify-content: space-evenly;
+}
+
+#container25 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container26 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* Due to below property, even though the width of the Div is more, they will not adjust there width to fix inside a 
+        flex-box, rather they will start wrapping themself on the nextline */
+    flex-wrap: wrap;
+}
+
+#container26 div {
+    width: 600px;
+    height: 200px;
+}
+
+#container27 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#container27 div {
+    width: 600px;
+    height: 200px;
+}
+
+#container28 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container28 div {
+    width: 600px;
+    height: 200px;
+}
+
+#container29 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#container29 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container30 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#container30 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container31 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#container31 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container32 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+}
+
+#container32 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container33 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+}
+
+#container33 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container34 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+#container34 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container35 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+#container35 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container36 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+#container36 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container37 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+#container37 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container38 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#container38 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container39 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#container39 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container40 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container40 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container41 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#container41 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container42 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#container42 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container43 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#container43 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container44 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+}
+
+#container44 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container45 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+}
+
+#container45 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container46 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+#container46 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container47 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+#container47 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container48 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+#container48 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container49 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+#container49 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container50 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#container50 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container51 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#container51 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container52 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container52 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container53 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#container53 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container54 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#container54 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container55 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#container55 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container56 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+}
+
+#container56 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container57 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+}
+
+#container57 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container58 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+#container58 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container59 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+#container59 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container60 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+#container60 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container61 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+#container61 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container62 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#container62 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container63 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#container63 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container64 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container64 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container65 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#container65 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container66 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#container66 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container67 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#container67 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container68 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+}
+
+#container68 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container69 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+}
+
+#container69 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container70 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+#container70 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container71 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+#container71 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container72 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+#container72 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container73 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+#container73 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container74 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container74 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container75 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container75 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container76 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container76 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container77 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container77 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container78 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container78 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container79 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container79 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container80 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container80 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container81 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container81 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container82 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container82 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container83 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container83 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container84 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container84 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container85 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container85 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container86 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container86 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container87 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container87 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container88 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container88 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container89 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container89 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container90 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container90 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container91 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container91 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container92 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* So using below baseline option for align-item property we are making sure that our items on cross-axis will be
+        aligned along the base of texts */
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+#container92 div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 4em;
+}
+
+#container93 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container93 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container94 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container94 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container95 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container95 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container96 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container96 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container97 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container97 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container98 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container98 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container99 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container99 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container100 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container100 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container101 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container101 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container102 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container102 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container103 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container103 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container104 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container104 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container105 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container105 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container106 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container106 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container107 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container107 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container108 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container108 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container109 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container109 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container110 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container110 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container111 {
+    background-color: #284b63;
+    width: 90%;
+    height: 1200px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+#container111 div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 4em;
+}
+
+#container112 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#container112 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container113 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+#container113 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container114 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#container114 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container115 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#container115 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container116 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#container116 div {
+    width: 500px;
+    height: 200px;
+}
+
+#container117 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#container117 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container118 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+#container118 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container119 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#container119 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container120 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#container120 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container121 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#container121 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container122 {
+    background-color: #284b63;
+    width: 90%;
+    height: 500px;
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+}
+
+#container122 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container122 div:nth-of-type(1) {
+    align-self: flex-start;
+}
+
+#container122 div:nth-of-type(2) {
+    align-self: center;
+}
+
+#container122 div:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+#container122 div:nth-of-type(4) {
+    align-self: baseline;
+}
+
+#container122 div:nth-of-type(5) {
+    align-self: flex-end;
+}
+
+#container123 {
+    background-color: #284b63;
+    width: 90%;
+    /* height: 500px; */
+    margin: 10px auto;
+    border: 5px solid rgb(2, 12, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+    align-content: space-around;
+}
+
+#container123 div {
+    width: 200px;
+    height: 200px;
+    /* flex-basis: 600px; */
+}
+
+#container123 div:nth-of-type(1) {
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Below will make first div to shrink 2 time faster than other when less space is available and make sure you
+        have flex-wrap turned off for this to take place otherwise things will be stacked */
+    flex-shrink: 4;
+}
+
+#container123 div:nth-of-type(2) {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#container123 div:nth-of-type(3) {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#container123 div:nth-of-type(4) {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#container123 div:nth-of-type(5) {
+    flex-basis: 600px;
+    flex-grow: 1;
+    /* notice that since the flex-basis for this div is 600px and we have marked flex-shrink as 0 so this is not going to 
+        shrink at all and takes up all the space. */
+    flex-shrink: 0;
+}
+
+#container124 {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+#container124 .sidebar {
+    background-color: aqua;
+    /* below is a shorthand way of writing all three property of flex that is flex grow followed by flex shrink 
+        followed by flex basis */
+    flex: 1 2 300px;
+    border: 3px solid black;
+}
+
+#container124 .maincontent {
+    background-color: blueviolet;
+    flex: 2 1 800px;
+    border: 2px solid black;
+}
