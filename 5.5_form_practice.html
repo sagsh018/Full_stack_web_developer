@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Practice HTML Form</title>
+</head>
+
+<body>
+    <h1>HTML FORM</h1>
+    <center>
+        <form action="/something">
+            <div>
+                <label for="username">Enter Username</label>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <label for="password">Enter Password</label>
+                <input type="password" name="password" id="password" placeholder="password">
+            </div>
+            <br>
+            <div>
+                <button>Submit</button>
+            </div>
+            <br>
+            <div>
+                <label for="number">Pick a number</label>
+                <input type="number" name="number" id="number" placeholder="number" min="1" max="10" value="2">
+            </div>
+        </form>
+        <hr>
+        <h1>Google Search</h1>
+        <form action="https://www.google.com/search">
+            <input type="text" placeholder="Search Here" name="q" style="width: 400px;">
+            <br>
+            <br>
+            <input type="submit" value="SEARCH">
+        </form>
+        <hr>
+        <form action="/check">
+            <label for="agreement">I Agree</label>
+            <input type="checkbox" id="agreement" name="agreement">
+            <br>
+            <br>
+            <button>Submit</button>
+        </form>
+        <hr>
+
+        <form action="/image">
+            <h1>RadioButton</h1>
+            <h2>Select the size</h2>
+            <label for="small">SMALL</label>
+            <input type="radio" id="small" name="size" value="small">
+            <label for="medium">MEDIUM</label>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="large">LARGE</label>
+            <input type="radio" id="large" name="size" value="large">
+            <br>
+            <br>
+            <button>Submit</button>
+        </form>
+        <hr>
+        <form action="/image">
+            <div>
+                <select name="color" id="color">
+                    <option value="">~~SELECT~~</option>
+                    <option value="RED">RED</option>
+                    <option value="BLUE">BLUE</option>
+                    <option value="GREEN">GREEN</option>
+                    <option value="PINK">PINK</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <button>
+                    Submit
+                </button>
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>
