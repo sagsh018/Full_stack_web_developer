@@ -33,3 +33,67 @@ h2 {
     text-decoration: none;
     color: #e01e37;
 }
+
+footer a {
+    color: #03045e;
+}
+
+h2+button {
+    background-color: magenta;
+}
+
+input+button {
+    font-size: 50px;
+}
+
+footer>a {
+    color: red;
+}
+
+input[type="password"] {
+    background-color: rgb(77, 70, 180);
+    color: white;
+}
+
+a[href*="google"] {
+    color: magenta;
+}
+
+a[href$=".org"] {
+    color: darkmagenta
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:hover {
+    background-color: #111d5e;
+}
+
+.post button:active {
+    background-color: deeppink;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px orange;
+}
+
+.post:nth-of-type(2n) {
+    background-color: mediumpurple;
+}
+
+h2::first-letter {
+    font-size: 100px;
+    font-weight: 200;
+}
+
+p::first-line {
+    background-color: black;
+    color: white;
+}
+
+p::selection {
+    background-color: red;
+    color: white;
+}
