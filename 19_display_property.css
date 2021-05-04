@@ -13,7 +13,7 @@
 .three {
     background-color: aqua;
     border: 1px black solid;
-    /* Note that for inline element the height and weight will not work */
+    /* Note that for inline element the height and width will not work */
     height: 50px;
     width: 50px;
     /* Note that for inline elements, padding will work but it will not push any text and make specially a space for the

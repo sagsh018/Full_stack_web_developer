@@ -1,0 +1,45 @@
+.first {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    display: inline;
+}
+
+.second {
+    background-color: rgb(226, 43, 156);
+    border: 1px solid black;
+    display: block;
+}
+
+.third {
+    background-color: purple;
+    border: 1px solid black;
+    color: white;
+    /* Height and width will not work on inline elements */
+    height: 250px;
+    width: 400px;
+    /* padding will work on inline elements but it will not impact the data around it */
+    padding: 20px;
+    /* Margin will work on inline element but only horizontly */
+    margin: 30px;
+}
+
+.fourth {
+    background-color: seagreen;
+    border: 1pa solid black;
+    height: 100px;
+    width: 250px;
+    padding: 20px;
+    margin: 30px;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: darkorchid;
+    border: 2px black solid;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    margin: 20px;
+}
