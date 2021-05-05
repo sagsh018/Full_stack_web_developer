@@ -1,0 +1,19 @@
+div {
+    background-color: slategray;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+#middle {
+    background-color: teal;
+}
+
+#static #middle {
+    position: static;
+    top: 50px;
+}
