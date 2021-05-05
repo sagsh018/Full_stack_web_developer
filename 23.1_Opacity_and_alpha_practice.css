@@ -1,0 +1,38 @@
+section {
+    background-color: teal;
+    width: 900px;
+    height: 900px;
+    border: 4px solid black;
+    padding: 10px;
+}
+
+div {
+    display: inline-block;
+}
+
+#rgba {
+    background-color: rgba(92, 0, 128, 0.4);
+    width: 30%;
+    height: 30%;
+    border: 2px solid black;
+    border-radius: 20%;
+    padding: 4%;
+    margin: 2%;
+    color: cornsilk;
+    font-size: 100%;
+    text-align: center;
+}
+
+#opacity {
+    background-color: seagreen;
+    width: 30%;
+    height: 30%;
+    border: 2px solid black;
+    border-radius: 20%;
+    padding: 4%;
+    margin: 2%;
+    color: cornsilk;
+    font-size: 100%;
+    text-align: center;
+    opacity: 0.5;
+}
