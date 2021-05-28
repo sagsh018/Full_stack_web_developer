@@ -129,3 +129,44 @@ function callTenTimes(f) {
 }
 
 callTenTimes(rollDie);
+
+
+// Returning a Function
+// So we can even return a function as well.
+// consider below example:
+
+function makeFunc() {
+    const rand = Math.floor(Math.random() * 10) + 1;
+    if (rand > 5) {
+        return function() {
+            console.log("You got better than 5..!");
+        }
+    } else {
+        return function() {
+            console.log("You got less than 5..!");
+        }
+    }
+}
+
+const whatYouGot = makeFunc();
+whatYouGot();
+
+// Let's consider another example where one function is going to create another function on the
+// basis of arguement and than return that function
+
+function makeBetweenFunc(min, max) {
+    return function(num) {
+        return num >= min && num <= max;
+    }
+}
+
+isbetween = makeBetweenFunc(1, 10);
+// So this statement has created a function isBetween based on min and max value we have passed 
+// and returned us a function which we have stored in isBetween.
+console.log(isbetween(5));
+console.log(isbetween(14));
+// Now we can create as many functions as required:
+isChild = makeBetweenFunc(0, 12);
+isTeenager = makeBetweenFunc(13, 19);
+isAdult = makeBetweenFunc(20, 60);
+isSenior = makeBetweenFunc(61, 120);
