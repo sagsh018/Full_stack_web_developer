@@ -27,3 +27,39 @@ const myObj = {
 }
 
 console.log(myObj.add(2, 4));
+
+// using this keyword
+// this keyword is used in order to access the object literal properties inside the methods of that object literals. This could be considered as one of 
+// the main use of it.
+// consoder the below example
+
+const person = {
+    'name': 'paul',
+    'age': '26',
+    getInfo() {
+        console.log("This is : ", this);
+        // Above ine will display what 'this' keyword is refering to. It is basically refering to this perticular object.
+        console.log(`${this.name} is ${this.age} year old`);
+    }
+}
+
+console.log(person.getInfo());
+
+// Now suppoe if we take another variable and point it to getinfo method
+
+const getInfo2 = person.getInfo;
+
+console.log(getInfo2());
+// When we will execute above line of console.log, it will not print properties of the object literal referenced by 'this'
+// keyword, The reason is : 'this' keyword work on the bases of, from where it has been invoked
+// in case when it is invoked with the object.method name then 'this' will refer to that object properties.
+// whereas in above case of getinfo2() calling it is not called with person....., it is not refering to person object,
+// rather it is refering to main object called windows object.
+
+// Note that whenever we open up a browser, and start working with javascript, a top level object is created named windows.
+// Also note that whenever we create any function in a javascript file or on console, that function is automatically
+// added in the windows object.
+
+// So the above function : getinfo2() can be called directly, as well as with window.getinfo2() like this as well.
+
+console.log(window.getInfo2());
