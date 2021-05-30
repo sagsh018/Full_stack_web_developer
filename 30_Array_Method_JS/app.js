@@ -184,3 +184,33 @@ console.log(isEven(3));
 // Let's convert our rollfie method in a arrow function
 
 const rollDie2 = () => Math.floor(Math.random() * 6) + 1;
+
+// Note :: We can only make use of implicit returns, if we have only one statement/expression in our function.
+// it will not work if there are more than one. because we are just telling JS that there is only one thing and implicitely
+// return that.
+
+// Now let's try to use this implicit return arraow function with Map, where it actually shines.
+
+const movies2 = [{
+        'name': 'conjuring',
+        'rating': 100
+    },
+    {
+        'name': 'conjuring2',
+        'rating': 98
+    },
+    {
+        'name': 'Avengers',
+        'rating': 90
+    },
+    {
+        'name': 'Avengers Infinity war',
+        'rating': 97
+    },
+    {
+        'name': 'Avengers End Game',
+        'rating': 100
+    }
+]
+
+const newMovies = movies2.map(movie => movie.name);
