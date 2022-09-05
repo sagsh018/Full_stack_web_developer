@@ -164,6 +164,11 @@ p::selection {
     background-color: red;
 }
 
+/* Below will apply selection pseudo element to entire page */
+/* ::selection {
+    background-color: #b7e4c7;
+} */
+
 
 /* below ode matters */
 
@@ -190,7 +195,7 @@ because below once are more specific in terms of ID, class and so on
 
 ORDER
 =====
-important > Inline style >ID selectors>CLASS, Attributes & Pseudo-class selectors>ELEMENT & pseudo-element selectors
+!important > Inline style >ID selectors>CLASS, Attributes & Pseudo-class selectors>ELEMENT & pseudo-element selectors
 
 https://specificity.keegan.st/
 
