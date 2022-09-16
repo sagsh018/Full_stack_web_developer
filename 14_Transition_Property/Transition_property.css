@@ -20,7 +20,10 @@ section div {
     margin: 20px 0;
     transition: margin-left 3s 1s;
 }
-
+/* 
+Site for transition function
+https://easings.net/
+*/
 section:hover div {
     margin-left: 500px;
 }

@@ -14,7 +14,7 @@ h1 {
 .second {
     width: 60%;
     height: 500px;
-    /* make sure that in below background line backgrount size should come immediately after the position separated
+    /* make sure that in below background line background size should come immediately after the position separated
         by a / */
     background: no-repeat center/cover url("https://images.unsplash.com/photo-1543310465-f4d3ca5a2a25?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=751&q=80");
     margin: 0 auto;
