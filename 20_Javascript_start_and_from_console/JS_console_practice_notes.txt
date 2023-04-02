@@ -1,0 +1,762 @@
+JavaScript
+==========
+
+Primitive Types
+================
+
+- Number
+- String
+- Boolean
+- Null
+- Undefined
+- Symbol
+- BigInt
+
+Numbers
+=======
+
+In JavaScript,
+
+    - JS has one number type
+    - Positive numbers
+    - Negative numbers
+    - Whole numbers (integers)
+    - Decimal numbers
+
+From Console ::
+8
+8
+89
+89
+324.5234
+324.5234
+-1
+-1
+-2
+-2
+-2.3234234234
+-2.3234234234
+1.99999999999999
+1.99999999999999
+1.999999999999999
+1.999999999999999
+1.9999999999999999
+2
+// Addition
+undefined
+//Adition
+2+3
+5
+// Multiplication
+3.5*3
+10.5
+//Division
+2/5
+0.4
+// PEMDAS
+undefined
+3 + 1 * 9
+12
+(3+1) *9
+36
+9%2
+1
+//Modulo
+9%2
+1
+// Exponentiation
+2 ** 4
+16
+
+
+NaN (Not a Number)
+==================
+
+NaN is a numeric value that represents something that is not a number. Any operation with NaN will be NaN
+
+From Console ::
+
+0/0
+NaN
+1 + NaN
+NaN
+typeof(NaN)
+'number'
+
+Variables
+==========
+
+Variables are like labels for values.
+
+- We can store a value and give it a name so that we can :
+    * Refer back to it later
+    * Use that value to do stuff
+    * Or change it to later one
+
+- Basic Syntax 
+
+    let someName = value;
+
+From Console ::
+
+let year = 1985
+undefined
+year
+1985
+let numHens = 5;
+undefined
+let numRoosters = 1;
+undefined
+numHens
+5
+numRoosters
+1
+numHens + numRoosters
+6
+// Value of original variables are not changed 
+numHens
+5
+numRoosters
+1
+let totalChickens = numHens 
+undefined
+let totalChickens = numHens  + numRoosters
+undefined
+totalChickens
+6
+numHens = numHens + 1
+6
+numHens
+6
+
+let score = 0;
+undefined
+score += 10;
+10
+score += 10;
+20
+score += 10;
+30
+score += 10;
+40
+score += 10;
+50
+score -= 20;
+30
+score -= 20;
+10
+score *= 2;
+20
+score /= 2;
+10
+
+let numLives = 9;
+undefined
+numLives--;
+9
+numLives
+8
+numLives++;
+8
+numLives;
+9
+// These are post increment and post decrement
+undefined
+--numLives
+8
+++numLives
+9
+// These are preincrement and pre decrement
+undefined
+
+- Another way of defining a variable in JavaScript is using "const" keyword
+
+- "const" works just like "let", except you cannot change the value of it once defined.
+
+From Console :::
+
+const luckyNum = 26;
+undefined
+luckyNum
+26
+luckyNum += 1;
+// This is not allowed
+VM2119:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:10
+(anonymous) @ VM2119:1
+luckyNum = 7;
+// This is also not allowed
+VM2200:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:10
+
+- We can make use of const to store universal values such as "pi", "daysInWeek", etc.
+
+- Once we cover arrays and objects, we'll see other situations where const makes sense over "let".
+
+- "var" : The old way of declaring a keyword. Before let and const, var was the only way of declaring variables. These days there isn't really a reason to use it.
+
+From Console ::
+
+var runDistance = 26.2;
+undefined
+runDistance
+26.2
+runDistance
+26.2
+runDistance += 1;
+27.2
+runDistance
+27.2
+
+Booleans
+========
+
+They have two values : true or false.
+
+From Console :::
+
+true
+true
+false
+false
+12
+12
+let isActiveGame = true;
+undefined
+isActiveGame
+true
+isActiveGame = false;
+false
+isActiveGame;
+false
+
+- In JavaScript variables can change types.
+
+From Console :::
+
+isLoggedIn = true;
+true
+isLoggedIn = 23;
+23
+
+Naming conventions for variables in in JavaScript
+==================================================
+
+- Variable names cannot have spaces between them
+
+- Variables cannot start with number
+
+- Variable names can start with underscore
+
+- Variable names follow camel case convention
+
+
+
+Strings
+=======
+
+- Strings are another premitive type in JavaScript.
+
+- They represent text in JavaScript and wrapped in quotes.
+
+From Console ::::
+
+let userName = "Danny";
+undefined
+let msg = "Please do not feed the chimps";
+undefined
+let animal = 'Dumbo Octopus'; // Single Quotes also works
+
+undefined
+let bad = "This is wrong';
+VM735:1 Uncaught SyntaxError: Invalid or unexpected token
+'23' // This is a string
+'23'
+23 //This is number
+23
+"" // Emplty string
+''
+' I told her to "go away"';// This is a place to use both single and double quotes
+' I told her to "go away"'
+
+- String are indexed.
+
+- Each character in a string has individual index ( a positional number).
+
+- Index starts always from 0.
+
+From Console :::
+
+let animal = "Dumbo Octopus";
+undefined
+animal
+'Dumbo Octopus'
+animal[0];
+'D'
+animal[1];
+'u'
+animal[6];
+'O'
+animal[99];
+undefined
+
+- Indexes of string are used to find let say first letter of a string.
+
+From Console :::
+
+let phoneNumber = "(123)345-1344";
+undefined
+// Let say we want to find if the first character of defined phone number above is '(' or not.
+phoneNumber[0];
+'('
+
+- We can calculate the length of any string by using length property on string
+
+From console :::
+
+animal;
+'Dumbo Octopus'
+animal.length;
+13
+// Notice that length of above string is 13 but the last character has index 1 less than length 
+animal[12];
+'s'
+'lol'.length;
+3
+
+- String concatination 
+
+From console :::
+
+'lol' + 'lol'
+'lollol'
+firstName = "River";
+'River'
+lastName = "Phoenix";
+'Phoenix'
+firstName + lastName;
+'RiverPhoenix'
+firstName[0] = r;
+// This is something that is not allowed in strings
+VM2420:1 Uncaught ReferenceError: r is not defined
+    at <anonymous>:1:16
+(anonymous) @ VM2420:1
+firstName[0] = 'r';
+// This is something that is not allowed in strings
+'r'
+firstName;
+'River'
+firstName = 'river'; // This can be done
+'river'
+firstName + " " + lastName;
+'river Phoenix'
+1 + 'hi';
+'1hi'
+// JavaScript converts the number type to string and concatinated them above
+undefined
+
+
+
+String Methods 
+==============
+
+- Methods are built-in actions that we can perform on individual strings.
+
+- They can help us do things like :
+
+    * Searching within the string
+    * Replacing part of string
+    * Changing the casing of string
+
+- Syntax => thing.method()
+
+- toUpperCase() and toLowerCase() => non-destructive methods of string.
+
+From Console :::
+
+"hello".lenght; //This is property
+undefined
+let msg = "leave me along right now i hate you plz";
+undefined
+msg.toUpperCase();
+'LEAVE ME ALONG RIGHT NOW I HATE YOU PLZ'
+msg.toUpperCase;
+ƒ toUpperCase() { [native code] }
+let agngryMsg = msg.toUpperCase(); // Here we are storing the value of this method of string.
+undefined
+agngryMsg;
+'LEAVE ME ALONG RIGHT NOW I HATE YOU PLZ'
+msg ; // Still same. Hence, this method is non destructive.
+'leave me along right now i hate you plz'
+agngryMsg.toLowerCase();
+'leave me along right now i hate you plz'
+"LOLOLOLOLOL".toLowerCase();
+'lololololol'
+
+- trim() => Removes the white spaces from the start or from the end of the string.
+
+From Console :::
+
+let userInput = "    hello my name is tim tom tammy ping pong   ";
+undefined
+userInput;
+'    hello my name is tim tom tammy ping pong   '
+userInput.trim();
+'hello my name is tim tom tammy ping pong'
+userInput // Still same. Non destructive
+'    hello my name is tim tom tammy ping pong   '
+"________dfsdfsdf".trim(); // Will not remove underscore
+'________dfsdfsdf'
+
+- We can chain methods one after the other as below
+
+From console :::
+
+let greeting = "  hello again !!     ";
+undefined
+greeting.trim().toUpperCase();
+'HELLO AGAIN !!'
+
+- Some string methods accepts arguements that modify their behavior. Think of them as inputs that we can pass in.
+
+- We pass these arguements inside parantheses.
+
+- indexOf()
+
+From console ::
+
+"haha that is so funny!".indexOf("h");
+0
+"haha that is so funny!".indexOf("!");
+21
+"haha that is so funny!".indexOf("$");
+-1
+"haha that is so funny!".indexOf("is");
+10
+
+- slice() : Used to slice the sring and get the substrinng
+
+- syntax :: str.slice(beginIndex[, endIndex]) : Please note that endIndex is optional. Also, endIndex is not included
+
+From Console :::
+
+let msg = "haha that is so funny!";
+undefined
+msg
+'haha that is so funny!'
+msg.slice(5);
+'that is so funny!'
+msg; // This still remain same. Hence, slice() is undestructive method.
+'haha that is so funny!'
+msg.slice(5,9); // Notice 9th character is not included
+'that'
+// We can also give negative index 
+msg.slice(-1);
+'!'
+// We can also give negative index 
+msg.slice(-3);
+'ny!'
+msg.slice(-6); // So negative index gives last characters
+'funny!'
+
+- replace() :: It matches the patterns and replaces them with the new one.
+
+- Syntax :: str.replace("pattern", "replace_with")
+
+From Console :::
+
+msg
+'haha that is so funny!'
+msg.replace("haha", "lolololol");
+'lolololol that is so funny!'
+// It only replace the first matching instance.
+undefined
+msg.replaceAll("s", "q"); // In case yoou want to replace all instances in a string
+'haha that iq qo funny!'
+
+- repeat() => To repeat the occurances of string.
+
+From Console ::::
+
+"lol".repeat(10);
+'lollollollollollollollollollol'
+
+String Template Literals
+========================
+
+- Without using string template Literals
+
+From Console :::
+
+let product = "Artichoke";
+undefined
+let price = 2.25;
+undefined
+let qty = 5;
+undefined
+"You bought " + qty + " " + product + ". Total is : " + price * qty;
+'You bought 5 Artichoke. Total is : 11.25'
+
+- So lot of concatination.
+
+- Template literals are strings that allow embedded expressions, which will be evaluated and then turned into a resulting string.
+
+- To use template literals, you have to use back ticks :: ` ` 
+
+From Console ::::
+
+`hello ${1+2}`;
+'hello 3'
+product
+'Artichoke'
+price
+2.25
+qty
+5
+`You bought ${qty} ${product}s. Total is : ${qty * price}`
+'You bought 5 Artichokes. Total is : 11.25'
+`You bought ${qty} ${product.toUpperCase()}s. Total is : ${qty * price}`
+'You bought 5 ARTICHOKEs. Total is : 11.25'
+
+Null & Undefined
+=================
+
+- Null =>
+    * Intentional absence of any value.
+    * Must be assigned.
+
+- Undefined => 
+    * Variables that do not have an assigned value are undefined.
+    * JavaScript way to saying I don't know
+
+From Console :::
+
+null
+null
+undefined
+undefined
+let x;
+undefined
+let loggedInUser = null;
+undefined
+loggedInUser = "Sagar";
+'Sagar'
+
+Random Numbers and the Math Object
+==================================
+
+- Math Object : Contains properties and methods for mathemaatical contants and functions.
+
+- For ex : Math.PI, Math.round(4.9) => 5, etc
+
+From Console ::
+
+Math.round(4.9);
+5
+Math.PI;
+3.141592653589793
+Math.abs(-456);
+456
+Math.pow(2,5);
+32
+Math.floor(3.9999);
+3 // Always chops off the Decimal
+Math.ceil(34.00001);
+35 // Always round up
+
+- Random Numbers : Math.random() gives us a random decimal between 0 and 1 (non - inclusive)
+
+From Console :::
+
+Math.random();
+0.2245745008133937
+Math.random();
+0.9092226415914877
+Math.random();
+0.8776979674873842
+Math.random();
+0.9218058453579019
+
+- In order to generate Random Integers we can use multiple step process as below :
+
+From Console :::
+
+- To generate random integers between 1 and 10 =>
+
+const step1 = Math.random();
+undefined
+const step2 = step1 * 10;
+undefined
+const step3 = Math.floor(step2);
+undefined
+const step4 = step3 + 1;
+undefined
+step4;
+8
+// We could do all these steps in single step as below :
+Math.floor(Math.random() *10) +1;
+4
+// We could do all these steps in single step as below :
+Math.floor(Math.random() *10) +1;
+1
+// We could do all these steps in single step as below :
+Math.floor(Math.random() *10) +1;
+8
+
+// To generate random integers between 1 and 5
+undefined
+Math.floor(Math.random() * 5) +1;
+2
+Math.floor(Math.random() * 5) +1;
+3
+Math.floor(Math.random() * 5) +1;
+2
+Math.floor(Math.random() * 5) +1;
+1
+
+// To generate random integers between 20 and 22
+Math.floor(Math.random()*3) +20;
+21
+// To generate random integers between 20 and 22
+Math.floor(Math.random()*3) +20;
+22
+// To generate random integers between 20 and 22
+Math.floor(Math.random()*3) +20;
+20
+
+
+Comparisons
+=============
+
+-  <, >, <=, >=
+
+from console ::::
+
+1<3
+true
+1>3
+false
+-1>20
+false
+-1<20
+true
+-1>-1
+false
+-1>=-1
+true
+-1<=10
+true
+
+- Though its uncommon, you can compare strings. String / character comparisons happens based on their 
+UNICODE assigned to every character.
+'A' < 'a'
+true
+- Refer ro UNICODE chart.
+
+-  ==, !=, ===, !==
+
+- == (double equal)
+
+- Check quality of value but not type
+- It coerces both values to same type and then compares them
+- This can lead to unexpected results sometime.
+
+From console :::
+
+1 == 1;
+true
+1 == '1';
+true
+null == undefined ;
+true
+1 == 2
+false
+'a' == 'b';
+false
+0 == false;
+true
+
+- === (Trible Equal)
+
+- This does care about both the equality of value and its type.
+
+From console ::
+
+1 === 1;
+true
+1 === '1';
+false
+0 === false;
+false
+null === undefined;
+false
+
+- != and !== (Single and double in-equality)
+
+- Again the concept is same. Single equal with ! does not care about types, whereas double equal with ! 
+does care about types :
+
+From console ::
+
+1 != 2;
+true
+1 != '1'
+false
+1 !== '1';
+true
+
+
+
+Console, Alert and Prompt
+==========================
+
+- Console.log() : Prints arguements to console.
+
+- console.warn()
+
+- console.error()
+
+From Console::: 
+
+console.log("HELLO");
+VM532:1 HELLO
+undefined
+console.warn("This is warning");
+VM626:1 This is warning
+(anonymous) @ VM626:1
+undefined
+console.error("This is an error);
+VM717:1 Uncaught SyntaxError: Invalid or unexpected token
+console.error("This is an error");
+VM731:1 This is an error
+(anonymous) @ VM731:1
+undefined
+
+- alert()
+
+From Console:::
+
+alert("Hello");
+undefined
+alert("This is an alert");
+undefined
+
+- prompt()
+
+From console :::
+
+prompt("Enter number : ");
+'10'
+
+let userInput = prompt("Enter the number");
+undefined
+typeof(userInput);
+'string'
+userInput
+'91'
+userInput + 8;
+'918'
+parseInt(userInput);
+91
+parseInt(userInput) + 9
+100

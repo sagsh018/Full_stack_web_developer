@@ -1,5 +1,5 @@
 // Example to demostrate the usage of AND, OR operators
-
+// AND have precedence over OR. If you want OR to run first then make use of brackets.
 const age = prompt("Enter Your Age");
 if ((age >= 0 && age < 5) || age > 65) {
     console.log("You are allowed for FREE!!")

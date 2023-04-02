@@ -1,5 +1,6 @@
-// Data inside an JavaScript object is stored in a form of Key:value pair.
-// We call these key:value pairs data stores are referenced here as JavaScript Object literals.
+// Data inside an JavaScript object is stored in a form of Key:value pair. This Key:Value pair is called property.
+// So Object in JavaScript is a collection of properties.
+// These key:value pairs data stores are referenced here as JavaScript Object literals.
 // We make use of curly braces in order to create these object literals
 // Another thing to note here is that Object literals are not ordered like array and here we make use of keys instead of index
 // in order to access the elements of objects.
@@ -11,6 +12,8 @@ const kitchenSink = {
     name: 'some',
     colors: ['red', 'orange']
 }
+
+// Note we can have all types of data inside an object literal. Here we have an integer, Boolean, string and an array of string.
 
 console.log(kitchenSink);
 
@@ -24,7 +27,17 @@ const year = {
 
 // So even though we have used numbers as keys, they will be converted into string.
 
-// Let's see how ti access the data inside an object literal.
+// Even if you keywords such as below for keys, they are also converted to string as well.
+
+const dumbdumb = {
+    true: "yes",
+    null: "no"
+}
+
+// console.log(dumbdumb);
+// {true: 'yes', null: 'no'}
+
+// Let's see how to access the data inside an object literal.
 console.log(kitchenSink.favNum);
 // There is another way as well to access the data using keys
 console.log(kitchenSink["name"]);
@@ -77,7 +90,7 @@ console.log(midTerm.danielle);
 // suppose i want to modify the marks of ezra from 50 to 80
 midTerm.ezra = 80;
 console.log(midTerm);
-// This wil modify the marks to ezra.
+// This will modify the marks to ezra.
 // we can even add new key value pairs as well
 midTerm.rahul = 90;
 console.log(midTerm);
@@ -85,6 +98,9 @@ midTerm.thomas = 'A'; // So we can modify the value as well.
 console.log(midTerm);
 // Note here we have used " . " notation to access the element of object, but we can even use the square bracket as well.
 
+// Note that even though an object literal is defined as constant, then also we can modify the values inside that object literal. 
+// This is same concept as that of an Array, where we cannot change the container array / object literal, but we can modify the
+// content inside that container.
 
 // Nesting Arrays and Objects
 // So we can have array having objects as its elements

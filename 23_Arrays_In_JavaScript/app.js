@@ -1,5 +1,18 @@
 // Arrays in JavaScript are continuous collection of hetrogeneous elements
 // We can even contain arrays inside array
+
+// To make an empty array
+let students = [];
+
+// An Array of strings
+let color = ["red", "green", "yellow"];
+
+// An array of numbers
+let lottoNumbers = [20, 30, 50, 60, 86];
+
+// A mixed array
+let stuff = ["string", 94, [40, 30], true];
+
 // Arrays in JavaScript are mutable. Note that strings in JavaScript are immutable
 // Below is the example of Arrays in JavaScript
 
@@ -7,7 +20,7 @@ let names = ['One', 'two', 'three'];
 console.log(names);
 
 // Index for arrays also starts from 0 and length of the array is 1 plus the last element index.
-// We can directly the 10th eement in the above example array and then the element in the middle 
+// We can directly insert the 10th eement in the above example array and then the element in the middle 
 // will be marked as undefined
 
 names[10] = 'Ten'
@@ -20,7 +33,7 @@ console.log(names);
 // push function helps us in adding one or more than one elements at the end of an array, just like pushing element on
 // the top of stack. Also note that this push function updates the actual array and return the updated size of an array.
 
-// pop function is used to remove one element from the end of an array. and this function also uodate the actual array
+// pop function is used to remove one element from the end of an array. and this function also updates the actual array
 // and this pop function returns the element that is poped out of the array.
 
 // shift and unshift functions of Array in JavaScript
@@ -40,14 +53,14 @@ let pets1 = dogs.concat(cats);
 console.log(pets1);
 // So order of elements differ based on array names we write in above example.
 
-// includes() method, this check the availability of an element in the array and return boolean true or false.
+// includes() method, this check the availability of an element in the array and return boolean true or false. Case sensitivity counts.
 cats.includes('cat1')
 
 // indexOf() methods, similar to the indexOf method in case of string. It returns the index of an element in an array
 // and return -1 if the element is not present in an array.
 cats.indexOf('cat2')
 
-// reverse() method, it reverse the array.
+// reverse() method, it reverse the array. It is inplace.
 pets1.reverse()
 
 // slice()
@@ -73,16 +86,25 @@ let colors = ["red", "green", "yellow", "violet", "cream", "blue", "orange"];
 console.log(colors);
 console.log(colors.splice(5, 1));
 console.log(colors); // This will not have color blue in it.
+// [ "red", "green", "yellow", "violet", "cream", "orange" ]
 console.log(colors.splice(2, 0, "green-yellow"));
 console.log(colors); // This will show that green-yellow will be inserted at the index location "2" given in above statement.
+// [ "red", "green", "green-yellow", "yellow", "violet", "cream", "orange" ]
 colors.splice(4, 2, "DELETED!!");
 console.log(colors); // This will delete two items from index location 4 and replace them by work "DELETED!!"
-// Note that splice is inplace method. it modifies the original array.
+// Note that splice is inplace method. it modifies the original array. It returns a deleted item inside an array. So basically it returns an 
+// array of one or more items deleted.
 
 // sort() method,
 // This method basically sorts the element of an array based on there unicode values and is not ike a normal sort.
 // we will come back to this later when we will start learning on how to pass functions to this methods and specify the
 // criteria on which this sort function will work.
+// from console ::
+// let score = [1, 2, 100, -12, 2500, 9, 7];
+// undefined
+// score.sort()
+// Array(7) [ -12, 1, 100, 2, 2500, 7, 9 ]
+// So as we can see that sort method sorted the numbers based on their first digit's unicode value and it does not work as normal sort method
 
 // Reference types and equality testing.
 // Note that both "==" and "===" check for the equality with respect ot the reference to an element or an array.

@@ -140,6 +140,11 @@ for (row of seatingChart) {
     }
 }
 
+// Another example of iterating over a string to print every character
+
+for (let char of "Hello World"){
+    console.log(char);
+  }
 
 // How to iterate over the non iterable object literals
 // consider below object literal
