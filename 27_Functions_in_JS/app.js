@@ -1,3 +1,8 @@
+// Functions allow us to write reusable, modular code.
+// We define a chunk of code that we can use at a later point.
+// We use them all the time.
+
+// Two step process
 // Defining a function
 function func() {
     console.log("Hello");
@@ -5,6 +10,7 @@ function func() {
     console.log("Bye");
 }
 
+// Calling/Running a function
 func(); // So this can be called any time wherever required
 func();
 func();
