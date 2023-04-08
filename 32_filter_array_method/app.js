@@ -2,7 +2,7 @@
 // =============
 
 // This basically takes in a function as a parameter and apply that function on every element of an array and if the
-// result evaluates to true than add it to new array.
+// result evaluates to truer than add it to new array.
 // at the end return that new array created.
 
 const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 27];
@@ -55,8 +55,8 @@ console.log(validUserNames(['abcdefghijkl', 'abcsdf', '123456789', 'sagarsharma'
 // ==============================
 
 // when every is called on an array, it applies the callback function passed in it as parameter and if every check returns
-// truem then it return true, otherwise false.
-// wherease, if any one of the check evaluates to true, then some return ture otherwise false.
+// true then it returns true, otherwise false.
+// whereas, if any one of the check evaluates to true, then some return ture otherwise false.
 
 const numbersFor = [80, 90, 85, 95, 89, 99, 100];
 

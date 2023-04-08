@@ -1,6 +1,6 @@
 // forEach method
 // ===============
-// It is  basically an array method, that accept function as an arguement and apply that function for
+// It is  basically an array method, that accept function as an argument and apply that function for
 // each element in an array.
 
 // consider the below array
@@ -13,7 +13,7 @@ function print(el) {
 
 numbers.forEach(print);
 // numbers.forEach(print);
-// So basiacally as many time as we call forEach method on array number, it is going to apply function "print" 
+// So basically as many times as we call forEach method on array number, it is going to apply function "print"
 // on every element of an array.
 
 // Now usually we write the function within the forEach method as below
@@ -156,13 +156,13 @@ const rollDie = () => {
 // }
 
 // So here we have made it a arrow function
-// lets reconsruct it again
+// lets reconstruct it again
 
 // const isEven = num => {
 //     return num % 2 === 0;
 // }
 
-// here we have removed paranthesis.
+// here we have removed parenthesis.
 // Let's reconstruct it again
 
 // const isEven = num => (
@@ -175,21 +175,21 @@ const rollDie = () => {
 // we could even write it on single line as well:
 
 // const isEven = num => ( num%2 === 0);
-// We can even get rid of paranthesis if we are putting all the things in one line like above.
+// We can even get rid of parenthesis if we are putting all the things in one line like above.
 
 const isEven = num => num % 2 === 0;
 console.log(isEven(3));
 // So just in a single line we have created entire function.
 
-// Let's convert our rollfie method in a arrow function
+// Let's convert our rolldie method in a arrow function
 
 const rollDie2 = () => Math.floor(Math.random() * 6) + 1;
 
 // Note :: We can only make use of implicit returns, if we have only one statement/expression in our function.
-// it will not work if there are more than one. because we are just telling JS that there is only one thing and implicitely
+// it will not work if there are more than one. because we are just telling JS that there is only one thing and implicitly
 // return that.
 
-// Now let's try to use this implicit return arraow function with Map, where it actually shines.
+// Now let's try to use this implicit return arrow function with Map, where it actually shines.
 
 const movies2 = [{
         'name': 'conjuring',

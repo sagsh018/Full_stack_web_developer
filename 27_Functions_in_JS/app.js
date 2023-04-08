@@ -62,7 +62,57 @@ function lastElement(arr) {
 console.log(lastElement([1, 2, 3]));
 
 
-// Scope of nested functions
+
+
+// Scope of functions
+console.log("Simple function scopes");
+// If same variable is also defined inside a function, then if printed inside function, variable inside function will
+// be preferred :
+
+// Example :
+let animal = "Giant Pacific Octopus";
+function observe(){
+    let animal = "Pajama Squid";
+    console.log(animal);
+}
+observe();
+// Prints :: Pajama Squid
+
+// Example:
+const creature = "Common Sea Dragon";
+
+function scubaDive(){
+    const creature = "Spanish Dancer"; //A type of sea slug
+    console.log(creature);
+}
+
+scubaDive();
+// prints : Spanish Dancer. Notice even though we have defined creature as a const variable outside function, it has
+// nothing to do with internal function variable.
+
+// Example :
+let deadlyAnimal = "Blue-Ringed Octopus";
+
+function handleAnimal() {
+    let deadlyAnimal = "Scorpionfish";
+    console.log(deadlyAnimal);
+}
+
+handleAnimal();
+console.log(deadlyAnimal)
+// prints : Scorpionfish and Blue-Ringed Octopus.
+
+
+
+// Block Scope
+// Any variable that is defined inside a block (other than function, like a loop, of an if block or any other
+// block of code, will be scoped inside that block only like that of function. The only exception here is that if
+// we uses var instead of let, then it will not be scoped to that block and can be accessed outside that block.
+// Please note with function scope var also works the same as that of let.
+
+
+
+// Scope of nested functions / lexical scoping
 console.log("Nested function scopes");
 
 function bankRobbery() {
@@ -88,7 +138,7 @@ bankRobbery();
 // That means color variable will be available inside inner() but not in bankRobbery().
 
 // Note : key var used to defining the variable has separate way of defining the scope. variable defined with 
-// var can be used after that as well.
+// var can be used after that as well, but not case of functions.
 
 
 
@@ -112,7 +162,7 @@ add(2, 3);
 // Higher Order Functions
 console.log("Higher Order Function");
 // These are the function that operate on/with other function. 
-// They accept other functions as arguements
+// They accept other functions as arguments (and/or)
 // They return other functions 
 
 function callTwice(func) {
