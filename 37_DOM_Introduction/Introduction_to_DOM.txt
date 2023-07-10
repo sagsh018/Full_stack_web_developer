@@ -1,0 +1,94 @@
+* DOM stands for Document Object Model.
+* At the code DOM is nothing but a bunch of JS objects that represents a web page. So suppose if we have an h1 HTML element on our web page, there will be 
+    a JS object that represent this h1. We can change that JS object and page will update to show those changes.
+
+So according to definition :
+============================
+
+- The DOM is JS representation of a webpage.
+- It's your JS window into the contents of webpage
+- Its just a bunch of objects that you can interact with via JS.
+
+Document Object
+================
+
+- So as we have already seen above that DOM act as a window into the content of our webpage through JS. The way DOM work is, when our browser loads the web page,
+    part of that loading process involves the incoming HTML and CSS and then creating the whole bunch of JS objects based upon those elements in HTML and styles
+    in CSS files.
+
+- Now, suppose we have very simple HTML document as below :
+
+    <body>
+        <h1>hello!</h1>
+        <ul>
+            <li>Water plants</li>
+            <li>Get some sleep</li>
+        </ul>
+    </body>
+
+    So all elements mentioned in above HTML page, gets their own JS objects and all these objects will have certain properties. For example, the type of elements
+    they represent. i.e. is it an li, or an image, etc. Some of them will have more specific properties like href in case of image tag and so on.
+
+    So basically HTML and CSS like above become input to the process of loading of web page and it spit them out as interrelated objects with lots and lots of 
+    properties. See the image below :
+
+    [IMAGE] 2023-07-10-17-17-00.png
+
+- So as we can see in the image attached above, objects that comes out of loading process are represented in a form of a tree and they all are related to each other
+    as parent child nodes.
+
+- At the very top of all these object there is a root object that is called as "Document" object.
+
+- Now like "window" object that is already available in browser console for JS when we check, we have this special object called document that is created based
+    on the content of web page that is loaded.
+
+- We can view the same in browser console using below :
+
+    console.dir(document)
+
+    Consider the image for the same from browser below :
+
+    [IMAGE] 2023-07-10-17-26-11.png
+
+- So "Document" object is our entry point into the world of DOM. It contains representations of all the content on a page, plus tons of useful methods and 
+    properties.
+
+[IMAGE] 2023-07-10-17-33-39.png
+
+Document object is a root of the tree that is created as above.
+
+- So as we are able to display details of entire document object as below :
+
+console.dir(document)
+
+We can then further check all the HTML tags(nothing but objects as we have mentioned above) using command below :
+
+document.all
+
+Output :
+========
+[html, head, meta, meta, title, link, body, h1, img#banner, p, b, b, a, a, a, a, a, a, div#toc, input#toctogglecheckbox.toctogglecheckbox, div.toctitle, h2#mw-toc-heading, span.toctogglespan, label.toctogglelabel, ul, li.toclevel-1.tocsection-1, a, span.tocnumber, span.toctext, li.toclevel-1.tocsection-2, a, span.tocnumber, span.toctext, ul, li.toclevel-2.tocsection-3, a, span.tocnumber, span.toctext, li.toclevel-2.tocsection-4, a, span.tocnumber, span.toctext, li.toclevel-1.tocsection-5, a, span.tocnumber, span.toctext, li.toclevel-1.tocsection-6, a, span.tocnumber, span.toctext, li.toclevel-1.tocsection-7, a, span.tocnumber, span.toctext, h2, span#History.mw-headline, p, b, a, a, sup#cite_ref-Ekarius_2-0.reference, a, a, sup#cite_ref-Graham_3-0.reference, a, a, a.mw-redirect, a, a, a, sup#cite_ref-4.reference, a, img.square, img.square, img.square, script, script, viewport: meta, banner: img#banner, toc: div#toc, toctogglecheckbox: input#toctogglecheckbox.toctogglecheckbox, mw-toc-heading: h2#mw-toc-heading, …]
+
+- Out of above output array, we can then select the tag that we want to look further :
+
+document.all[10]
+
+Output :
+========
+<b>Silkie</b>
+
+- Now we can extract the innerText of that tag element by :
+
+document.all[10].innerText
+
+Output :
+========
+'Silkie'
+
+- We can also change it further by :
+
+document.all[10].innerText = "SILKIE"
+
+So converted the part of HTML web page from lower case to upper case without actually touching the HTML code. So thats how we can use these objects created
+as a window of JS to access web page content and modify it and perform operation on it.
+
