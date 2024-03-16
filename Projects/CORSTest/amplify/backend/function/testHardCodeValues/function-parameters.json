@@ -1,0 +1,15 @@
+{
+  "lambdaLayers": [],
+  "permissions": {
+    "api": {
+      "corstest": [
+        "Query",
+        "Mutation",
+        "Subscription"
+      ]
+    }
+  },
+  "secretNames": [
+    "API_CORSTEST_GRAPHQLAPIKEYOUTPUT"
+  ]
+}

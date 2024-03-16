@@ -1,0 +1,20 @@
+- Events in DOM are the key for creating any sort of interactive website.
+- Events help in responding to user inputs and actions.
+- So basically they help you perticular actions using JS in response to users action.
+- Below are some example events that we can listen to and respond by running JS code in response :
+    * Clicks
+    * drags
+    * drops
+    * hovers
+    * scrolls
+    * form submission
+    * key presses
+    * focus/blur
+    * mouse wheel
+    * double Click
+    * copying
+    * pasting
+    * audio start
+    * screen resize
+    * printing
+    

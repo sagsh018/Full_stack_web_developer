@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-corstest-dev-173452-authRole",
+      "UnauthRoleArn": "arn:aws:iam::621488670163:role/amplify-corstest-dev-173452-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::621488670163:role/amplify-corstest-dev-173452-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-corstest-dev-173452-deployment",
+      "UnauthRoleName": "amplify-corstest-dev-173452-unauthRole",
+      "StackName": "amplify-corstest-dev-173452",
+      "StackId": "arn:aws:cloudformation:us-east-1:621488670163:stack/amplify-corstest-dev-173452/484048a0-c1c3-11ee-9ceb-0a8108e4f407",
+      "AmplifyAppId": "d2csf304niahcy"
+    },
+    "categories": {
+      "api": {
+        "corstest": {}
+      },
+      "function": {
+        "testHardCodeValues": {
+          "deploymentBucketName": "amplify-corstest-dev-173452-deployment",
+          "s3Key": "amplify-builds/testHardCodeValues-65424b4e30757265664f-build.zip",
+          "secretsPathAmplifyAppId": "d2csf304niahcy"
+        }
+      }
+    }
+  }
+}

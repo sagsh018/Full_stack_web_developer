@@ -1,0 +1,27 @@
+// So starting from this section we are going to learn, how we can make requests using JS.
+// Following are the ways we are goiong to learn to make requests here :
+    // * XMLHTTP
+    // * FETCH
+    // * AXIOS
+
+// So as we have seen previously in this course that we make request to any API all the time. For example, when we are using any web page and clicking on any link onto it, we are making request. Similarly, while reloading that poge we are making 
+// a request.
+
+// Also, we do make request from our code in all the new modern web applications and making such requests from our code (JS) has its own tearm which is called "AJAX" - Asynchronous Javascript AND XML
+// So basically making these request is nothing but making request to load some data or making some request to upload data to some for of server with whom we are communicating.
+
+// So if we talk about some examples : Consider reddit page, if we scroll towards the end of reddit page that is already loaded, newer posts gets load everytime you hit the end pf page and there are newer posts that gets load up.
+// you can also check this under the network tab of our web page where you can see new requests are being made whenever you reach at the end of page and new network traffic is seen in that tab. These new requests are everytime made to the
+// reddit server to load new data
+
+// Notice, AJAX means here the requests been made to load more data on the page that is already been loaded or after it is loaded. In past on these web pages, let say if user wanted to see more information, they used to have a button on current page
+// that send them to may another page to get more information. But now using AJAX, we are make the request in backend and load more data within the current web page in our modern web apps.
+
+// Another example of this is let say you are already on a web application and inside it you are making a search using a search toolbar. Now, as you start typing something the requests willl be made in the backend to the server to match what is being typed
+// and populate the results based on your typing.
+
+// Now when we are talking about these AJAX requests, we are not talking about actual web page request to render to user. Becasue in case of loading up the entire web page server returns us the combination of HTML, CSS and JS as we have seen previously.
+// However, here as we see that while typing on already loaded web page let say for searching AJAX calls are made to match what we type in served and what we just get is a way data in JSON format.
+
+// So for a typical request for loading up a web page we are making a request and getting back our HTML + CSS + JS. However, when we make request from JS to let say load more data into already loaded web page, we are making them using AJAX and getting back
+// JSON raw data.
